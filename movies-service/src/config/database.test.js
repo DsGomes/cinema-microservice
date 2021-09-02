@@ -10,3 +10,10 @@ test('Disconnecting database', async () => {
     const isDisconnected = await database.disconnect();
     expect(isDisconnected).toBeTruthy();
 })
+
+test('Disconnecting database when database is already disconnected', async () => {
+    await database.disconnect();
+
+    const isDisconnected = await database.disconnect();
+    expect(isDisconnected).toBeTruthy();
+})
