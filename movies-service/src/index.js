@@ -8,4 +8,4 @@ const server = require('./server/server');
     } catch (error) {
         console.error(error)
     }
-})();
+})(); 
